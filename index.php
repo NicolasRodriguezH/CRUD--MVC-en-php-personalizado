@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,9 +8,9 @@
 
     <title>NEWCRUD-MVC</title>
 </head>
-<body class="">
+<body class="flex flex-col justify-center items-strech bg-sky-200">
 
-<h1 class="bg-sky-300/50 text-2xl border text-center">Montando MVC</h1>
+<h1 class="bg-amber-100 shadow-xl text-2xl font-bold text-center opacity-25">Montando MVC</h1>
 <?php
 
     include_once "controller/controller.php";
