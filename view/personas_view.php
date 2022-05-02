@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -60,9 +60,9 @@ foreach($matrizPersona as $person):
 ?>
 
     <tr>
-        <td><input type="text" name="Nom" size="10" class="rounded-md"></td>
-        <td><input type="text" name="Ape" size="10" class="rounded-md"></td>
-        <td><input type="text" name="Dir" size="10" class="rounded-md"></td>
+        <td><input type="text" name="Nom" size="10" class="rounded-xl"></td>
+        <td><input type="text" name="Ape" size="10" class="rounded-xl"></td>
+        <td><input type="text" name="Dir" size="10" class="rounded-xl"></td>
         <td><input type="submit" name="cr" size="10" class="" id="cr" value="Insertar"></td>
     </tr>
 

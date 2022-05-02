@@ -8,7 +8,7 @@
 
     <title>NEWCRUD-MVC</title>
 </head>
-<body class="flex flex-col justify-center items-strech bg-sky-200">
+<body class="flex flex-col justify-center items-strech">
 
 <h1 class="bg-amber-100 shadow-xl text-2xl font-bold text-center opacity-25">Montando MVC</h1>
 <?php
