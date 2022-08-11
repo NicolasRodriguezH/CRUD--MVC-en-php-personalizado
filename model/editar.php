@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <h1>Pagina de actualizacion</h1>
+    <h1 align='center'>Pagina de actualizacion</h1>
 
     <?php
 
@@ -16,20 +16,20 @@
     $base = conectar::connecting();
 
     if (!isset($_POST["bot_actualizar"])) {
-        $id=$_GET["Idensin"];
+        $Id=$_GET["Idensin"];
         $nom=$_GET["nom"];
         $ape=$_GET["ape"];
         $dir=$_GET["dir"];
     } else {
-        $id=$_POST["Idensin"];
+        $Id=$_POST["Idensin"];
         $nom=$_POST["nom"];
         $ape=$_POST["ape"];
         $dir=$_POST["dir"];
 
-        $sql=("UPDATE datos_usuarios SET Nombre=:miNom, Apellido=:miApe, Direccion=:miDir, ID=:miId");
+        $sql=("UPDATE datos_usuarios SET Nombre=:miNom, Apellido=:miApe, Direccion=:miDir WHERE ID=:miId");
         $resultado = $base->prepare($sql);
 
-            $resultado->execute(array(":miId"=>$id, ":miNom"=>$nom, ":miApe"=>$ape,":miDir"=>$dir));
+            $resultado->execute(array(":miId"=>$Id, ":miNom"=>$nom, ":miApe"=>$ape,":miDir"=>$dir));
 
         header("location:../index.php");
     }
@@ -44,7 +44,7 @@
     <tr>
         <td></td>
         <td><label for="id"></label>
-        <input type="hidden" name="Idensin" id="id" value="<?php echo $id ?>"></td>
+        <input type="hidden" name="Idensin" id="Id" value="<?php echo $Id ?>"></td>
     </tr>
     <tr>
         <td>Nombre: </td>

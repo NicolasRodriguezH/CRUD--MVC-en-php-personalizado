@@ -27,9 +27,9 @@
 ?>
 
 
-<form class="self-center mt-40 bg-amber-100 max-w-fit rounded-lg border-slate-900 border-solid" action="<?php echo $_SERVER['PHP_SELF'];?>" method="post"> 
+<form class="px-2 py-2 self-center mt-40 bg-amber-100 max-w-fit rounded-lg border-slate-900 border-solid" action="<?php echo $_SERVER['PHP_SELF'];?>" method="post"> 
 
-    <table class="flex justify-around shadow-2xl">
+    <table class="flex justify-around shadow-2xl pl-4 pb-3">
         <tr>
             <td class="text-lg underline ">ID</td>
             <td class="text-lg underline ">Nombre</td>
@@ -50,9 +50,9 @@ foreach($matrizPersona as $person):
         <td><?php echo $person["Apellido"]?></td>
         <td><?php echo $person["Direccion"]?></td>
 
-        <td class=""><a href="/model/borrar.php?Idensin=<?php echo $person["ID"]?>"><input type="button" name="del" id="del" value="Borrar"></a></td>
+        <td class="px-3"><a href="/model/borrar.php?Idensin=<?php echo $person["ID"]?>"><input type="button" name="del" id="del" value="Borrar"></a></td>
 
-        <td class=""><a href="/model/editar.php?Idensin=<?php echo $person["ID"]?> & nom=<?php echo $person["Nombre"]?> & ape=<?php echo $person["Apellido"]?> & dir=<?php echo $person["Direccion"]?>"><input type="button" name="up" id="up" value="Actualizar"></a></td>
+        <td class="px-3"><a href="/model/editar.php?Idensin=<?php echo $person["ID"]?> & nom=<?php echo $person["Nombre"]?> & ape=<?php echo $person["Apellido"]?> & dir=<?php echo $person["Direccion"]?>"><input type="button" name="up" id="up" value="Actualizar"></a></td>
     </tr>
 
 <?php
@@ -63,14 +63,14 @@ foreach($matrizPersona as $person):
         <td><input type="text" name="Nom" size="10" class="rounded-xl"></td>
         <td><input type="text" name="Ape" size="10" class="rounded-xl"></td>
         <td><input type="text" name="Dir" size="10" class="rounded-xl"></td>
-        <td><input type="submit" name="cr" size="10" class="" id="cr" value="Insertar"></td>
+        <td><input type="submit" name="cr" size="10" class="bg-orange-400 text-white px-3 p-2 ml-2 my-4 rounded-full" id="cr" value="Insertar"></td>
     </tr>
 
     <tr><td>
 
     <?php
         for($i=1; $i<=$total_pags; $i++){
-        echo "<a href='?pagina=" . $i . "'>" . $i . "</a>";
+        echo "<a class='px-1' href='?pagina=" . $i . "'>" . $i . "</a>";
         }
     ?>
 
